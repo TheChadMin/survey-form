@@ -1,0 +1,186 @@
+html {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient( rgb(221, 221, 221), rgb(247, 252, 247));
+}
+
+hr {
+    border: 1px solid rgba(1, 82, 1, 0.3);
+    background-color: rgba(1, 82, 1, 0.2); 
+    width: 80%;
+    margin: 20px auto;
+}
+
+#title {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+}
+
+.container {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px 0 50px 0;
+}
+
+main {
+    background: linear-gradient(rgb(157, 214, 164), rgb(247, 252, 247));
+    border: auto;
+    border-radius: 10px;
+}
+
+.labels {
+    vertical-align: top;
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    padding: 15px 10px;
+    font-size: 1.25em;
+    margin: 0 auto;
+}
+
+.box-right {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+fieldset {
+    display: inline-block;
+    max-width: 500px;
+    width: 45%;
+    padding: 1em 0;
+    margin: 10px 1% 20px 1%;
+    border-radius: 5px;
+}
+
+legend {
+    width: 75%;
+}
+
+#radio-set {
+    text-align: left;
+    margin: 0 0 0 30%;
+}
+
+#radio-set input {
+    margin-top: 7px;
+}
+
+.input-size {
+    width: 70%;
+    margin: 10px 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.dropdown {
+    width: 50%;
+    min-width: 200px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 13px 0 0 0;
+}
+
+.headline {
+    font-weight: bold; 
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    left: -40px;
+    margin: 5px 0 0 0;
+    font-size: 1.1em;
+    list-style-type: none;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+#comment {
+    width: 75%;
+    height: 75px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#cbtext {
+    font-size: 0.9em;
+    vertical-align: top;
+    margin: 0 auto;
+}
+
+button {
+    margin: 20px auto;
+    width: 100px;
+    height: 35px;
+    font-size: 1em;
+    background-color: rgb(157, 214, 164);
+    border: 1px solid;
+    border-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .labels {
+        width: 90%;
+        font-size: 1.2em;
+        text-align: left;
+        max-width: 100%;
+        margin: 10px 0 -5px 0;
+    }
+
+    .box-right {
+        width: 100%;
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    #radio-set {
+        margin-left: 5%;
+    }
+
+    .input-size {
+        width: 85%;
+        max-width: 350px;
+    }
+
+    #comment {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hrtop {
+        margin-bottom: 10px;
+    }
+
+    .hrbottom {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        margin: 5px 0 0 0;
+    }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script type="text/javascript" src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+        <title>Paint Survey</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    </head>
+
+    <header>
+        <h1 id="title">Generic Painting</h1>
+    </header>
+
+    <main class="container">
+        <p id="description" class="headline">Give us some feedback!</p>
+
+        <!--Beginning of the survey form-->
+        <form id="survey-form">
+
+            <!--Name, Email, & Inovoice Text Field-->
+            <div>
+                <div class="labels">
+                    <label id="name-label" for="name">*Name:</label>
+                </div>
+                <div class="box-right">
+                    <input class="input-size" type="text" id="name" placeholder="Name" required />
+                </div>
+            </div>
+            <div>
+                <div class="labels">
+                    <label id="email-label" for="email">*Email:</label>
+                </div>
+                <div class="box-right">
+                    <input class="input-size" type="email" id="email" placeholder="Email" required />
+                </div>
+            </div>
+            <div>
+                <div class="labels">
+                    <label id="number-label" for="number">*Invoice Number:</label>
+                </div>
+                <div class="box-right">
+                    <input class="input-size" type="number" id="number" min="100000" max="999999" placeholder="XXXXXX"/> 
+                </div>
+            </div>    
+            <hr class="hrtop">
+
+            <!--Work Type Dropdown-->
+            <div class="labels">
+                <label for="dropdown">What kind of painting did we do:</label>
+            </div>
+            <div class="box-right">
+                <select id="dropdown" class="dropdown dp-plus">
+                    <option value="Interior">Interior</option>
+                    <option value="Exterior">Exterior</option>
+                    <option value="Both">Interior &amp; Exterior</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                    <div class="labels">
+                        <label style="font-size: 0.7em;" for="other">If other, please describe:</label>
+                    </div>
+                    <div class="box-right">
+                        <input type="text" class="input-size" id="other" maxlength="20" placeholder="Other"></textarea>
+                    </div>
+                </div>    
+            <hr>
+
+            <!--Satisfaction Radio Buttons-->
+            <fieldset>
+                <legend>What part of our service was <strong>most</strong> staisfactory?</legend>
+                <div id="radio-set">
+                    <div>
+                        <input type="radio" id="bcolor" name="best" value="rb1"/>
+                        <label for="bcolor">Color Consulting</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bservice" name="best" value="rb2"/>
+                        <label for="bservice">Project Time</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bquality" name="best" value="rb3"/>
+                        <label for="bquality">Overall Quality</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bvalue" name="best" value="rb4"/>
+                        <label for="bvalue">Overall Value</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bother" name="best" value="rb5"/>
+                        <label for="bother">Other</label>
+                    </div>    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What part of our service was <strong>least</strong> satisfactory?</legend>
+                <div id="radio-set">
+                    <div>
+                        <input type="radio" id="wcolor" name="worst" value="rw1"/>
+                        <label for="wcolor">Color Consulting</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wservice" name="worst" value="rw2"/>
+                        <label for="wservice">Project Time</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wquality" name="worst" value="rw3"/>
+                        <label for="wquality">Overall Quality</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wvalue" name="worst" value="rw4"/>
+                        <label for="wvalue">Overall Value</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wother" name="worst" value="rw5"/>
+                        <label for="wother">Other</label>
+                    </div>    
+                </div>
+            </fieldset>
+
+            <!--General Feedback Selectors-->
+            <div class="labels">
+                <label for="time">Did our workers show up on time?</label>
+            </div>
+            <div class="box-right">
+                <select id="time" class="dropdown dp-plus">
+                    <option value="always">Yes</option>
+                    <option value="mostly">Mostly</option>
+                    <option value="Never">No</option>
+                </select>
+            </div>
+            
+            <div class="labels">
+                <label for="clean">Did our workers clean up every day?</label>
+            </div>
+            <div class="box-right">
+                <select id="clean" class="dropdown">
+                    <option value="always">Yes</option>
+                    <option value="Never">No</option>
+                </select>
+            </div>    
+
+            <div class="labels">
+                <label for="communication">Did we communicate clearly with you?</label>
+            </div>
+            <div class="box-right">
+                <select id="communication" class="dropdown">
+                    <option value="always">Yes</option>
+                    <option value="Never">No</option>
+                </select>
+            </div>
+            <hr class="hrbottom">
+
+            <!--Service Improvment Checkboxes-->
+            <div>
+                <div class="labels">
+                    <label for="improvement">How can we improve our service?<br> (Check all that apply)</label>
+                </div>
+                <div class="box-right" id="improvement">
+                    <ul>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box1">Customer Service</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box2">Starting on Schedule</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box3">Cleanliness</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box4">Straightening Lines</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box5">Paint Streaks Showing</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="Box6">Bad Fumes</label></li>
+                        <li class="checkbox"><label><input class="check" type="checkbox" name="improve" value="box7">Project Length</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Additional Comments Text Field-->
+            <div>
+                <div class="labels">
+                    <label for="comment">Additional Feedback:</label>
+                </div>
+                <div class="box-right">
+                    <textarea id="comment" maxlength="300" placeholder="Maximum of 300 characters."></textarea>
+                </div>
+            </div>    
+            <div>
+                <input type="checkbox" id="callback" value="callback">
+                <label for="callback" id="cbtext">*I would like to be contacted in regards to this feedback*</label>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+
+</html>
